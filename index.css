@@ -31,7 +31,7 @@ label{
 	height:100%;
 	display:block
 }
-input{
+input[type]{
 	width:100%;
 	height:100%;
 	opacity:0;
@@ -68,13 +68,13 @@ input{
 #a1:checked~table [for=a1],#b1:checked~table [for=b1],#c1:checked~table [for=c1],#d1:checked~table [for=d1],#e1:checked~table [for=e1],#f1:checked~table [for=f1],#g1:checked~table [for=g1],#h1:checked~table [for=h1]{
 	border:thick solid
 }
-.a8:checked~table [name=a8],.b8:checked~table [name=b8],.c8:checked~table [name=c8],.d8:checked~table [name=d8],.e8:checked~table [name=e8],.f8:checked~table [name=f8],.g8:checked~table [name=g8],.h8:checked~table [name=h8],
-.a7:checked~table [name=a7],.b7:checked~table [name=b7],.c7:checked~table [name=c7],.d7:checked~table [name=d7],.e7:checked~table [name=e7],.f7:checked~table [name=f7],.g7:checked~table [name=g7],.h7:checked~table [name=h7],
-.a6:checked~table [name=a6],.b6:checked~table [name=b6],.c6:checked~table [name=c6],.d6:checked~table [name=d6],.e6:checked~table [name=e6],.f6:checked~table [name=f6],.g6:checked~table [name=g6],.h6:checked~table [name=h6],
-.a5:checked~table [name=a5],.b5:checked~table [name=b5],.c5:checked~table [name=c5],.d5:checked~table [name=d5],.e5:checked~table [name=e5],.f5:checked~table [name=f5],.g5:checked~table [name=g5],.h5:checked~table [name=h5],
-.a4:checked~table [name=a4],.b4:checked~table [name=b4],.c4:checked~table [name=c4],.d4:checked~table [name=d4],.e4:checked~table [name=e4],.f4:checked~table [name=f4],.g4:checked~table [name=g4],.h4:checked~table [name=h4],
-.a3:checked~table [name=a3],.b3:checked~table [name=b3],.c3:checked~table [name=c3],.d3:checked~table [name=d3],.e3:checked~table [name=e3],.f3:checked~table [name=f3],.g3:checked~table [name=g3],.h3:checked~table [name=h3],
-.a2:checked~table [name=a2],.b2:checked~table [name=b2],.c2:checked~table [name=c2],.d2:checked~table [name=d2],.e2:checked~table [name=e2],.f2:checked~table [name=f2],.g2:checked~table [name=g2],.h2:checked~table [name=h2],
-.a1:checked~table [name=a1],.b1:checked~table [name=b1],.c1:checked~table [name=c1],.d1:checked~table [name=d1],.e1:checked~table [name=e1],.f1:checked~table [name=f1],.g1:checked~table [name=g1],.h1:checked~table [name=h1]{
+.a8:checked~table [value=a8],.b8:checked~table [value=b8],.c8:checked~table [value=c8],.d8:checked~table [value=d8],.e8:checked~table [value=e8],.f8:checked~table [value=f8],.g8:checked~table [value=g8],.h8:checked~table [value=h8],
+.a7:checked~table [value=a7],.b7:checked~table [value=b7],.c7:checked~table [value=c7],.d7:checked~table [value=d7],.e7:checked~table [value=e7],.f7:checked~table [value=f7],.g7:checked~table [value=g7],.h7:checked~table [value=h7],
+.a6:checked~table [value=a6],.b6:checked~table [value=b6],.c6:checked~table [value=c6],.d6:checked~table [value=d6],.e6:checked~table [value=e6],.f6:checked~table [value=f6],.g6:checked~table [value=g6],.h6:checked~table [value=h6],
+.a5:checked~table [value=a5],.b5:checked~table [value=b5],.c5:checked~table [value=c5],.d5:checked~table [value=d5],.e5:checked~table [value=e5],.f5:checked~table [value=f5],.g5:checked~table [value=g5],.h5:checked~table [value=h5],
+.a4:checked~table [value=a4],.b4:checked~table [value=b4],.c4:checked~table [value=c4],.d4:checked~table [value=d4],.e4:checked~table [value=e4],.f4:checked~table [value=f4],.g4:checked~table [value=g4],.h4:checked~table [value=h4],
+.a3:checked~table [value=a3],.b3:checked~table [value=b3],.c3:checked~table [value=c3],.d3:checked~table [value=d3],.e3:checked~table [value=e3],.f3:checked~table [value=f3],.g3:checked~table [value=g3],.h3:checked~table [value=h3],
+.a2:checked~table [value=a2],.b2:checked~table [value=b2],.c2:checked~table [value=c2],.d2:checked~table [value=d2],.e2:checked~table [value=e2],.f2:checked~table [value=f2],.g2:checked~table [value=g2],.h2:checked~table [value=h2],
+.a1:checked~table [value=a1],.b1:checked~table [value=b1],.c1:checked~table [value=c1],.d1:checked~table [value=d1],.e1:checked~table [value=e1],.f1:checked~table [value=f1],.g1:checked~table [value=g1],.h1:checked~table [value=h1]{
 	display:block
 }
