@@ -32,11 +32,12 @@ label{
 	display:block
 }
 input{
-	width:12vmin;
-	height:12vmin;
+	width:100%;
+	height:100%;
 	opacity:0;
 	display:none;
-	position:absolute
+	position:absolute;
+	-webkit-appearance:none
 }
 #a8:hover~table .a8,#b8:hover~table .b8,#c8:hover~table .c8,#d8:hover~table .d8,#e8:hover~table .e8,#f8:hover~table .f8,#g8:hover~table .g8,#h8:hover~table .h8,
 #a7:hover~table .a7,#b7:hover~table .b7,#c7:hover~table .c7,#d7:hover~table .d7,#e7:hover~table .e7,#f7:hover~table .f7,#g7:hover~table .g7,#h7:hover~table .h7,
