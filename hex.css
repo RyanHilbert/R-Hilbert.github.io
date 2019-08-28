@@ -2,10 +2,10 @@
 *{
 	transition:transform 1s
 }
-#tilt:checked~table{
+#tilt:checked~* table{
 	transform:rotate(30deg)
 }
-#tilt:checked~table span{
+#tilt:checked~* table span{
 	transform:rotate(-30deg)
 }
 tr{
