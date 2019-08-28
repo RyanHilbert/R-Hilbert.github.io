@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<meta charset=UTF-8>
+<title>C(he)ss - Rhombic</title>
+<style>*{--:9vmin}</style>
+<link rel=stylesheet href=rhombus.css>
+<input type=checkbox id=tilt>
+<label for=tilt>Tilt</label>
+<form>
+	<label>
+		<input type=radio name=from checked>
+		<input type=radio name=from id=a1 value=a1 class=b1>
+		<input type=radio name=from id=a2 value=a2 class=d2>
+		<input type=radio name=from id=a5 value=a5 class=d4>
+		<input type=radio name=from id=a6 value=a6 class=b4>
+
+		<input type=radio name=from id=b2 value=b2 class=b1>
+		<input type=radio name=from id=b3 value=b3 class=b4>
+
+		<input type=radio name=from id=c1 value=c1 class="d1 e1">
+		<input type=radio name=from id=c2 value=c2 class="d2 e4">
+		<input type=radio name=from id=c3 value=c3 class="d2 e3">
+		<input type=radio name=from id=c4 value=c4 class="d3 e6">
+		<input type=radio name=from id=c5 value=c5 class="d3 e5">
+		<input type=radio name=from id=c6 value=c6 class="d4 e8">
+		<input type=radio name=from id=c7 value=c7 class="d4 e7">
+		<input type=radio name=from id=c8 value=c8 class="d5 e0">
+
+		<input type=radio name=from id=i1 value=c1 class="h1 g1" disabled>
+		<input type=radio name=from id=i2 value=c2 class="h2 g4" disabled>
+		<input type=radio name=from id=i3 value=c3 class="h2 g3" disabled>
+		<input type=radio name=from id=i4 value=c4 class="h3 g6" disabled>
+		<input type=radio name=from id=i5 value=c5 class="h3 g5" disabled>
+		<input type=radio name=from id=i6 value=c6 class="h4 g8" disabled>
+		<input type=radio name=from id=i7 value=c7 class="h4 g7" disabled>
+		<input type=radio name=from id=i8 value=c8 class="h5 g0" disabled>
+
+		<input type=radio name=from id=j2 value=j2 class=j1 disabled>
+		<input type=radio name=from id=j3 value=j3 class=j4 disabled>
+
+		<input type=radio name=from id=k1 value=k1 class=j1 disabled>
+		<input type=radio name=from id=k2 value=k2 class=h2 disabled>
+		<input type=radio name=from id=k5 value=k5 class=h4 disabled>
+		<input type=radio name=from id=k6 value=k6 class=j4 disabled>
+		<table>
+			<tr style=display:none>
+			<tr style=display:none>
+			<tr style=display:none>
+			<tr>
+				<td style=visibility:hidden>
+				<td style=visibility:hidden>
+				<td style=visibility:hidden>
+				<td><label for=k1><span>♜
+				<td><label for=k2><span>♞
+				<td><label><span>♛
+				<td><label><span>♚
+				<td><label for=k5><span>♞
+				<td><label for=k6><span>♜
+			<tr>
+				<td colspan=2 style=visibility:hidden>
+				<td colspan=2 class="k1 j2">
+				<td colspan=2><label for=j2><span>♝
+				<td colspan=2><label for=j3><span>♝
+				<td colspan=2 class="k6 j3">
+			<tr>
+				<td style=visibility:hidden>
+				<td style=visibility:hidden>
+				<td><label for=i1><span>♟
+				<td><label for=i2><span>♟
+				<td><label for=i3><span>♟
+				<td><label for=i4><span>♟
+				<td><label for=i5><span>♟
+				<td><label for=i6><span>♟
+				<td><label for=i7><span>♟
+				<td><label for=i8><span>♟
+			<tr>
+				<td colspan=2 class=i1>
+				<td colspan=2 class="i2 i3 k2">
+				<td colspan=2 class="i4 i5">
+				<td colspan=2 class="i6 i7 k5">
+				<td colspan=2 class=i8>
+			<tr>
+				<td style=visibility:hidden>
+				<td class=i1>
+				<td>
+				<td class=i3>
+				<td class=i2>
+				<td class=i5>
+				<td class=i4>
+				<td class=i7>
+				<td class=i6>
+				<td>
+				<td class=i8>
+				<td style=visibility:hidden>
+			<tr>
+				<td colspan=2>
+				<td colspan=2>
+				<td colspan=2>
+				<td colspan=2>
+				<td colspan=2>
+				<td colspan=2>
+			<tr>
+				<td style=visibility:hidden>
+				<td class=c1><input type=submit name=to value=e1>
+				<td>
+				<td class=c3><input type=submit name=to value=e3>
+				<td class=c2><input type=submit name=to value=e4>
+				<td class=c5><input type=submit name=to value=e5>
+				<td class=c4><input type=submit name=to value=e6>
+				<td class=c7><input type=submit name=to value=e7>
+				<td class=c6><input type=submit name=to value=e8>
+				<td>
+				<td class=c8><input type=submit name=to value=e0>
+			<tr>
+				<td colspan=2 class=c1><input type=submit name=to value=d1>
+				<td colspan=2 class="c2 c3 a2"><input type=submit name=to value=d2>
+				<td colspan=2 class="c4 c5"><input type=submit name=to value=d3>
+				<td colspan=2 class="c6 c7 a5"><input type=submit name=to value=d4>
+				<td colspan=2 class=c8><input type=submit name=to value=d5>
+			<tr>
+				<td style=visibility:hidden>
+				<td style=visibility:hidden>
+				<td><label for=c1><span>♙
+				<td><label for=c2><span>♙
+				<td><label for=c3><span>♙
+				<td><label for=c4><span>♙
+				<td><label for=c5><span>♙
+				<td><label for=c6><span>♙
+				<td><label for=c7><span>♙
+				<td><label for=c8><span>♙
+			<tr>
+				<td colspan=2 style=visibility:hidden>
+				<td colspan=2 class="a1 b2"><input type=submit name=to value=b1>
+				<td colspan=2><label for=b2><span>♗
+				<td colspan=2><label for=b3><span>♗
+				<td colspan=2 class="a6 b3"><input type=submit name=to value=b4>
+			<tr>
+				<td style=visibility:hidden>
+				<td style=visibility:hidden>
+				<td style=visibility:hidden>
+				<td><label for=a1><span>♖
+				<td><label for=a2><span>♘
+				<td><label><span>♕
+				<td><label><span>♔
+				<td><label for=a5><span>♘
+				<td><label for=a6><span>♖

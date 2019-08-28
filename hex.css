@@ -1,0 +1,46 @@
+@import'common.css';
+*{
+	transition:transform 1s
+}
+#tilt:checked~table{
+	transform:rotate(30deg)
+}
+#tilt:checked~table span{
+	transform:rotate(-30deg)
+}
+tr{
+	display:block;
+	margin-bottom:calc(var(--)/-4);
+}
+td{
+	width:calc(var(--)*.866);
+	clip-path:polygon(-50%50%,50%0,150%50%,50%100%)
+}
+table label:hover{
+	border:thick solid black
+}
+label:before,label:after{
+	content:'';
+	width:calc(var(--)/2);
+	height:calc(var(--)*.433);
+	position:absolute;
+	margin:auto;
+	border-top:inherit;
+	border-left:inherit;
+	transform:translateY(calc(var(--)/4))rotate(-150deg)skew(-30deg)
+}
+label:before{
+	transform:translateY(calc(var(--)/-4))rotate(30deg)skew(-30deg)
+}
+tr:nth-child(even){
+	margin-left:calc(var(--)*.433)
+}
+tr:nth-child(odd)>td:nth-child(3n-2),tr:nth-child(even)>td:nth-child(3n-1){
+	background-color:gray
+}
+tr:nth-child(odd)>td:nth-child(3n-1),tr:nth-child(even)>td:nth-child(3n){
+	background-color:whitesmoke
+}
+tr:nth-child(odd)>td:nth-child(3n),tr:nth-child(even)>td:nth-child(3n-2){
+	background-color:silver
+}

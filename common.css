@@ -1,0 +1,93 @@
+*,:before,:after{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	box-sizing:border-box
+}
+body{
+	overflow:hidden
+}
+table{
+	border-spacing:0;
+	table-layout:fixed
+}
+td{
+	width:var(--,12vmin);
+	height:var(--,12vmin);
+	font-size:calc(var(--,12vmin)*.75);
+	vertical-align:middle;
+	text-align:center;
+	position:relative;
+	overflow:hidden;
+	background-color:gray
+}
+tr:nth-child(even)>td:nth-child(odd),tr:nth-child(odd)>td:nth-child(even){
+	background-color:silver
+}
+td:hover{
+	box-shadow:inset 0 0 1em
+}
+td>label{
+	width:100%;
+	height:100%;
+	position:absolute
+}
+[type=radio],[type=submit]{
+	width:100%;
+	height:100%;
+	position:absolute;
+	display:none;
+	opacity:0
+}
+span{
+	position:absolute
+}
+#a0:hover~* .a0,#b0:hover~* .b0,#c0:hover~* .c0,#d0:hover~* .d0,#e0:hover~* .e0,#f0:hover~* .f0,#g0:hover~* .g0,#h0:hover~* .h0,#i0:hover~* .i0,#j0:hover~* .j0,#k0:hover~* .k0,
+#a1:hover~* .a1,#b1:hover~* .b1,#c1:hover~* .c1,#d1:hover~* .d1,#e1:hover~* .e1,#f1:hover~* .f1,#g1:hover~* .g1,#h1:hover~* .h1,#i1:hover~* .i1,#j1:hover~* .j1,#k1:hover~* .k1,
+#a2:hover~* .a2,#b2:hover~* .b2,#c2:hover~* .c2,#d2:hover~* .d2,#e2:hover~* .e2,#f2:hover~* .f2,#g2:hover~* .g2,#h2:hover~* .h2,#i2:hover~* .i2,#j2:hover~* .j2,#k2:hover~* .k2,
+#a3:hover~* .a3,#b3:hover~* .b3,#c3:hover~* .c3,#d3:hover~* .d3,#e3:hover~* .e3,#f3:hover~* .f3,#g3:hover~* .g3,#h3:hover~* .h3,#i3:hover~* .i3,#j3:hover~* .j3,#k3:hover~* .k3,
+#a4:hover~* .a4,#b4:hover~* .b4,#c4:hover~* .c4,#d4:hover~* .d4,#e4:hover~* .e4,#f4:hover~* .f4,#g4:hover~* .g4,#h4:hover~* .h4,#i4:hover~* .i4,#j4:hover~* .j4,#k4:hover~* .k4,
+#a5:hover~* .a5,#b5:hover~* .b5,#c5:hover~* .c5,#d5:hover~* .d5,#e5:hover~* .e5,#f5:hover~* .f5,#g5:hover~* .g5,#h5:hover~* .h5,#i5:hover~* .i5,#j5:hover~* .j5,#k5:hover~* .k5,
+#a6:hover~* .a6,#b6:hover~* .b6,#c6:hover~* .c6,#d6:hover~* .d6,#e6:hover~* .e6,#f6:hover~* .f6,#g6:hover~* .g6,#h6:hover~* .h6,#i6:hover~* .i6,#j6:hover~* .j6,#k6:hover~* .k6,
+#a7:hover~* .a7,#b7:hover~* .b7,#c7:hover~* .c7,#d7:hover~* .d7,#e7:hover~* .e7,#f7:hover~* .f7,#g7:hover~* .g7,#h7:hover~* .h7,#i7:hover~* .i7,#j7:hover~* .j7,#k7:hover~* .k7,
+#a8:hover~* .a8,#b8:hover~* .b8,#c8:hover~* .c8,#d8:hover~* .d8,#e8:hover~* .e8,#f8:hover~* .f8,#g8:hover~* .g8,#h8:hover~* .h8,#i8:hover~* .i8,#j8:hover~* .j8,#k8:hover~* .k8,
+#a9:hover~* .a9,#b9:hover~* .b9,#c9:hover~* .c9,#d9:hover~* .d9,#e9:hover~* .e9,#f9:hover~* .f9,#g9:hover~* .g9,#h9:hover~* .h9,#i9:hover~* .i9,#j9:hover~* .j9,#k9:hover~* .k9{
+	box-shadow:inset 0 0 1em
+}
+#a0:checked~* .a0,#b0:checked~* .b0,#c0:checked~* .c0,#d0:checked~* .d0,#e0:checked~* .e0,#f0:checked~* .f0,#g0:checked~* .g0,#h0:checked~* .h0,#i0:checked~* .i0,#j0:checked~* .j0,#k0:checked~* .k0,
+#a1:checked~* .a1,#b1:checked~* .b1,#c1:checked~* .c1,#d1:checked~* .d1,#e1:checked~* .e1,#f1:checked~* .f1,#g1:checked~* .g1,#h1:checked~* .h1,#i1:checked~* .i1,#j1:checked~* .j1,#k1:checked~* .k1,
+#a2:checked~* .a2,#b2:checked~* .b2,#c2:checked~* .c2,#d2:checked~* .d2,#e2:checked~* .e2,#f2:checked~* .f2,#g2:checked~* .g2,#h2:checked~* .h2,#i2:checked~* .i2,#j2:checked~* .j2,#k2:checked~* .k2,
+#a3:checked~* .a3,#b3:checked~* .b3,#c3:checked~* .c3,#d3:checked~* .d3,#e3:checked~* .e3,#f3:checked~* .f3,#g3:checked~* .g3,#h3:checked~* .h3,#i3:checked~* .i3,#j3:checked~* .j3,#k3:checked~* .k3,
+#a4:checked~* .a4,#b4:checked~* .b4,#c4:checked~* .c4,#d4:checked~* .d4,#e4:checked~* .e4,#f4:checked~* .f4,#g4:checked~* .g4,#h4:checked~* .h4,#i4:checked~* .i4,#j4:checked~* .j4,#k4:checked~* .k4,
+#a5:checked~* .a5,#b5:checked~* .b5,#c5:checked~* .c5,#d5:checked~* .d5,#e5:checked~* .e5,#f5:checked~* .f5,#g5:checked~* .g5,#h5:checked~* .h5,#i5:checked~* .i5,#j5:checked~* .j5,#k5:checked~* .k5,
+#a6:checked~* .a6,#b6:checked~* .b6,#c6:checked~* .c6,#d6:checked~* .d6,#e6:checked~* .e6,#f6:checked~* .f6,#g6:checked~* .g6,#h6:checked~* .h6,#i6:checked~* .i6,#j6:checked~* .j6,#k6:checked~* .k6,
+#a7:checked~* .a7,#b7:checked~* .b7,#c7:checked~* .c7,#d7:checked~* .d7,#e7:checked~* .e7,#f7:checked~* .f7,#g7:checked~* .g7,#h7:checked~* .h7,#i7:checked~* .i7,#j7:checked~* .j7,#k7:checked~* .k7,
+#a8:checked~* .a8,#b8:checked~* .b8,#c8:checked~* .c8,#d8:checked~* .d8,#e8:checked~* .e8,#f8:checked~* .f8,#g8:checked~* .g8,#h8:checked~* .h8,#i8:checked~* .i8,#j8:checked~* .j8,#k8:checked~* .k8,
+#a9:checked~* .a9,#b9:checked~* .b9,#c9:checked~* .c9,#d9:checked~* .d9,#e9:checked~* .e9,#f9:checked~* .f9,#g9:checked~* .g9,#h9:checked~* .h9,#i9:checked~* .i9,#j9:checked~* .j9,#k9:checked~* .k9{
+	box-shadow:inset 0 0 1em
+}
+#a0:checked~* [for=a0],#b0:checked~* [for=b0],#c0:checked~* [for=c0],#d0:checked~* [for=d0],#e0:checked~* [for=e0],#f0:checked~* [for=f0],#g0:checked~* [for=g0],#h0:checked~* [for=h0],#i0:checked~* [for=i0],#j0:checked~* [for=j0],#k0:checked~* [for=k0],
+#a1:checked~* [for=a1],#b1:checked~* [for=b1],#c1:checked~* [for=c1],#d1:checked~* [for=d1],#e1:checked~* [for=e1],#f1:checked~* [for=f1],#g1:checked~* [for=g1],#h1:checked~* [for=h1],#i1:checked~* [for=i1],#j1:checked~* [for=j1],#k1:checked~* [for=k1],
+#a2:checked~* [for=a2],#b2:checked~* [for=b2],#c2:checked~* [for=c2],#d2:checked~* [for=d2],#e2:checked~* [for=e2],#f2:checked~* [for=f2],#g2:checked~* [for=g2],#h2:checked~* [for=h2],#i2:checked~* [for=i2],#j2:checked~* [for=j2],#k2:checked~* [for=k2],
+#a3:checked~* [for=a3],#b3:checked~* [for=b3],#c3:checked~* [for=c3],#d3:checked~* [for=d3],#e3:checked~* [for=e3],#f3:checked~* [for=f3],#g3:checked~* [for=g3],#h3:checked~* [for=h3],#i3:checked~* [for=i3],#j3:checked~* [for=j3],#k3:checked~* [for=k3],
+#a4:checked~* [for=a4],#b4:checked~* [for=b4],#c4:checked~* [for=c4],#d4:checked~* [for=d4],#e4:checked~* [for=e4],#f4:checked~* [for=f4],#g4:checked~* [for=g4],#h4:checked~* [for=h4],#i4:checked~* [for=i4],#j4:checked~* [for=j4],#k4:checked~* [for=k4],
+#a5:checked~* [for=a5],#b5:checked~* [for=b5],#c5:checked~* [for=c5],#d5:checked~* [for=d5],#e5:checked~* [for=e5],#f5:checked~* [for=f5],#g5:checked~* [for=g5],#h5:checked~* [for=h5],#i5:checked~* [for=i5],#j5:checked~* [for=j5],#k5:checked~* [for=k5],
+#a6:checked~* [for=a6],#b6:checked~* [for=b6],#c6:checked~* [for=c6],#d6:checked~* [for=d6],#e6:checked~* [for=e6],#f6:checked~* [for=f6],#g6:checked~* [for=g6],#h6:checked~* [for=h6],#i6:checked~* [for=i6],#j6:checked~* [for=j6],#k6:checked~* [for=k6],
+#a7:checked~* [for=a7],#b7:checked~* [for=b7],#c7:checked~* [for=c7],#d7:checked~* [for=d7],#e7:checked~* [for=e7],#f7:checked~* [for=f7],#g7:checked~* [for=g7],#h7:checked~* [for=h7],#i7:checked~* [for=i7],#j7:checked~* [for=j7],#k7:checked~* [for=k7],
+#a8:checked~* [for=a8],#b8:checked~* [for=b8],#c8:checked~* [for=c8],#d8:checked~* [for=d8],#e8:checked~* [for=e8],#f8:checked~* [for=f8],#g8:checked~* [for=g8],#h8:checked~* [for=h8],#i8:checked~* [for=i8],#j8:checked~* [for=j8],#k8:checked~* [for=k8],
+#a9:checked~* [for=a9],#b9:checked~* [for=b9],#c9:checked~* [for=c9],#d9:checked~* [for=d9],#e9:checked~* [for=e9],#f9:checked~* [for=f9],#g9:checked~* [for=g9],#h9:checked~* [for=h9],#i9:checked~* [for=i9],#j9:checked~* [for=j9],#k9:checked~* [for=k9]{
+	border:thick solid
+}
+.a0:checked~* [value=a0],.b0:checked~* [value=b0],.c0:checked~* [value=c0],.d0:checked~* [value=d0],.e0:checked~* [value=e0],.f0:checked~* [value=f0],.g0:checked~* [value=g0],.h0:checked~* [value=h0],.i0:checked~* [value=i0],.j0:checked~* [value=j0],.k0:checked~* [value=k0],
+.a1:checked~* [value=a1],.b1:checked~* [value=b1],.c1:checked~* [value=c1],.d1:checked~* [value=d1],.e1:checked~* [value=e1],.f1:checked~* [value=f1],.g1:checked~* [value=g1],.h1:checked~* [value=h1],.i1:checked~* [value=i1],.j1:checked~* [value=j1],.k1:checked~* [value=k1],
+.a2:checked~* [value=a2],.b2:checked~* [value=b2],.c2:checked~* [value=c2],.d2:checked~* [value=d2],.e2:checked~* [value=e2],.f2:checked~* [value=f2],.g2:checked~* [value=g2],.h2:checked~* [value=h2],.i2:checked~* [value=i2],.j2:checked~* [value=j2],.k2:checked~* [value=k2],
+.a3:checked~* [value=a3],.b3:checked~* [value=b3],.c3:checked~* [value=c3],.d3:checked~* [value=d3],.e3:checked~* [value=e3],.f3:checked~* [value=f3],.g3:checked~* [value=g3],.h3:checked~* [value=h3],.i3:checked~* [value=i3],.j3:checked~* [value=j3],.k3:checked~* [value=k3],
+.a4:checked~* [value=a4],.b4:checked~* [value=b4],.c4:checked~* [value=c4],.d4:checked~* [value=d4],.e4:checked~* [value=e4],.f4:checked~* [value=f4],.g4:checked~* [value=g4],.h4:checked~* [value=h4],.i4:checked~* [value=i4],.j4:checked~* [value=j4],.k4:checked~* [value=k4],
+.a5:checked~* [value=a5],.b5:checked~* [value=b5],.c5:checked~* [value=c5],.d5:checked~* [value=d5],.e5:checked~* [value=e5],.f5:checked~* [value=f5],.g5:checked~* [value=g5],.h5:checked~* [value=h5],.i5:checked~* [value=i5],.j5:checked~* [value=j5],.k5:checked~* [value=k5],
+.a6:checked~* [value=a6],.b6:checked~* [value=b6],.c6:checked~* [value=c6],.d6:checked~* [value=d6],.e6:checked~* [value=e6],.f6:checked~* [value=f6],.g6:checked~* [value=g6],.h6:checked~* [value=h6],.i6:checked~* [value=i6],.j6:checked~* [value=j6],.k6:checked~* [value=k6],
+.a7:checked~* [value=a7],.b7:checked~* [value=b7],.c7:checked~* [value=c7],.d7:checked~* [value=d7],.e7:checked~* [value=e7],.f7:checked~* [value=f7],.g7:checked~* [value=g7],.h7:checked~* [value=h7],.i7:checked~* [value=i7],.j7:checked~* [value=j7],.k7:checked~* [value=k7],
+.a8:checked~* [value=a8],.b8:checked~* [value=b8],.c8:checked~* [value=c8],.d8:checked~* [value=d8],.e8:checked~* [value=e8],.f8:checked~* [value=f8],.g8:checked~* [value=g8],.h8:checked~* [value=h8],.i8:checked~* [value=i8],.j8:checked~* [value=j8],.k8:checked~* [value=k8],
+.a9:checked~* [value=a9],.b9:checked~* [value=b9],.c9:checked~* [value=c9],.d9:checked~* [value=d9],.e9:checked~* [value=e9],.f9:checked~* [value=f9],.g9:checked~* [value=g9],.h9:checked~* [value=h9],.i9:checked~* [value=i9],.j9:checked~* [value=j9],.k9:checked~* [value=k9]{
+	display:block
+}

@@ -1,0 +1,63 @@
+@import'common.css';
+table,span{
+	transition:transform 1s
+}
+#tilt:checked~* table{
+	transform:rotate(30deg)
+}
+#tilt:checked~* table span{
+	transform:skewY(30deg)rotate(-30deg)
+}
+#tilt:checked~* table tr:nth-child(4n) td:nth-child(even) span,
+#tilt:checked~* table tr:nth-child(4n-2) td:nth-child(odd) span{
+	transform:skewY(-30deg)rotate(-30deg)
+}
+#tilt:checked~* table [colspan] span{
+	transform:scale(1.732,.577)skew(-30deg)
+}
+tr:nth-child(4n-1):before{
+	content:''
+}
+tr:nth-child(4n-3)>td:nth-child(3n-2),
+tr:nth-child(4n-2)>td:nth-child(3n),
+tr:nth-child(4n-1)>td:nth-child(3n-1),
+tr:nth-child(4n)>td:nth-child(3n){
+	background-color:gray
+}
+tr:nth-child(4n-3)>td:nth-child(3n),
+tr:nth-child(4n-2)>td:nth-child(3n-2),
+tr:nth-child(4n-1)>td:nth-child(3n-2),
+tr:nth-child(4n)>td:nth-child(3n-2){
+	background-color:silver
+}
+tr:nth-child(4n-3)>td:nth-child(3n-1),
+tr:nth-child(4n-2)>td:nth-child(3n-1),
+tr:nth-child(4n-1)>td:nth-child(3n),
+tr:nth-child(4n)>td:nth-child(3n-1){
+	background-color:whitesmoke
+}
+tr:nth-child(4n-2)>td:nth-child(odd),
+tr:nth-child(4n)>td:nth-child(even),
+tr:nth-child(4n-2)>td:nth-child(even) span,
+tr:nth-child(4n)>td:nth-child(odd) span{
+	transform:skewY(30deg)
+}
+tr:nth-child(4n-2)>td:nth-child(even),
+tr:nth-child(4n)>td:nth-child(odd),
+tr:nth-child(4n-2)>td:nth-child(odd) span,
+tr:nth-child(4n)>td:nth-child(even) span{
+	transform:skewY(-30deg)
+}
+td{
+	width:calc(var(--)*.866)
+}
+tr:nth-child(odd)>td{
+	height:calc(var(--)/2)
+}
+td[colspan]{
+	transform:rotate(-30deg)skew(30deg)scale(.577,1.732)
+}
+td[colspan] span{
+	line-height:.75;
+	transform:scale(1.732,.577)skew(-30deg)rotate(30deg)
+}

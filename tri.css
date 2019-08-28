@@ -1,0 +1,65 @@
+@import'common.css';
+*{
+	transition:transform 1s
+}
+#tilt:checked~table{
+	transform:rotate(30deg)
+}
+#tilt:checked~table span{
+	transform:skew(30deg)rotate(-30deg)
+}
+#tilt:checked~table tr:nth-child(odd) td:nth-child(odd) span,
+#tilt:checked~table tr:nth-child(even) td:nth-child(even) span{
+	transform:skew(-30deg)rotate(-30deg)
+}
+td{
+	display:inline-block;
+	height:calc(var(--,12vmin)*.866);
+	margin-right:calc(var(--,12vmin)/-2);
+	font-size:calc(var(--,12vmin)*.5);
+	text-align:left;
+	line-height:1;
+	transform:skew(30deg)
+}
+td:last-child{
+	clip-path:polygon(0 0,0 100%,100% 0)
+}
+tr:nth-child(even)>td:nth-child(odd):last-child,
+tr:nth-child(odd)>td:nth-child(even):last-child{
+	clip-path:polygon(0 0, 0 100%,100% 100%)
+}
+tr:nth-child(even)>td:nth-child(odd),
+tr:nth-child(odd)>td:nth-child(even){
+	line-height:2;
+	transform:skew(-30deg)
+}
+tr:nth-child(even)>td:nth-child(odd) span,
+tr:nth-child(odd)>td:nth-child(even) span{
+	transform:skew(30deg)
+}
+span{
+	transform:skew(-30deg)
+}
+tr{
+	position:relative
+}
+td:hover{
+	border:thick solid black
+}
+td:hover+*{
+	border-left:thick solid black
+}
+td:last-child:hover:after{
+	content:'';
+	display:inline-block;
+	position:absolute;
+	border-left:thick solid black
+}
+tr:nth-child(even)>td:nth-child(odd):last-child:after,
+tr:nth-child(odd)>td:nth-child(even):last-child:after{
+	transform:skew(30deg)translate(45%)skew(30deg)
+}
+tr:nth-child(even)>td:nth-child(even):last-child:after,
+tr:nth-child(odd)>td:nth-child(odd):last-child:after{
+	transform:skew(-30deg)translate(45%)skew(-30deg)
+}
