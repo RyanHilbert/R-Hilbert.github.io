@@ -16,9 +16,6 @@ td{
 	width:calc(var(--)*.866);
 	clip-path:polygon(-50%50%,50%0,150%50%,50%100%)
 }
-table label:hover{
-	border:thick solid black
-}
 label:before,label:after{
 	content:'';
 	width:calc(var(--)/2);
