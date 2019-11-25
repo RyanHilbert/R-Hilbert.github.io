@@ -39,6 +39,12 @@ input{
 	position:absolute;
 	-webkit-appearance:none
 }
+#from{
+	border-radius:50%
+}
+#to{
+	border-radius:50%
+}
 #a8:hover~table .a8,#b8:hover~table .b8,#c8:hover~table .c8,#d8:hover~table .d8,#e8:hover~table .e8,#f8:hover~table .f8,#g8:hover~table .g8,#h8:hover~table .h8,
 #a7:hover~table .a7,#b7:hover~table .b7,#c7:hover~table .c7,#d7:hover~table .d7,#e7:hover~table .e7,#f7:hover~table .f7,#g7:hover~table .g7,#h7:hover~table .h7,
 #a6:hover~table .a6,#b6:hover~table .b6,#c6:hover~table .c6,#d6:hover~table .d6,#e6:hover~table .e6,#f6:hover~table .f6,#g6:hover~table .g6,#h6:hover~table .h6,
