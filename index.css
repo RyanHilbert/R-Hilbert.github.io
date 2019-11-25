@@ -3,6 +3,7 @@
 	left:0;
 	right:0;
 	bottom:0;
+	border-width:thick;
 	box-sizing:border-box
 }
 table{
@@ -73,7 +74,7 @@ input{
 #a3:checked~table [for=a3],#b3:checked~table [for=b3],#c3:checked~table [for=c3],#d3:checked~table [for=d3],#e3:checked~table [for=e3],#f3:checked~table [for=f3],#g3:checked~table [for=g3],#h3:checked~table [for=h3],
 #a2:checked~table [for=a2],#b2:checked~table [for=b2],#c2:checked~table [for=c2],#d2:checked~table [for=d2],#e2:checked~table [for=e2],#f2:checked~table [for=f2],#g2:checked~table [for=g2],#h2:checked~table [for=h2],
 #a1:checked~table [for=a1],#b1:checked~table [for=b1],#c1:checked~table [for=c1],#d1:checked~table [for=d1],#e1:checked~table [for=e1],#f1:checked~table [for=f1],#g1:checked~table [for=g1],#h1:checked~table [for=h1]{
-	border:thick solid
+	border-style:solid
 }
 .a8:checked~table [value=a8],.b8:checked~table [value=b8],.c8:checked~table [value=c8],.d8:checked~table [value=d8],.e8:checked~table [value=e8],.f8:checked~table [value=f8],.g8:checked~table [value=g8],.h8:checked~table [value=h8],
 .a7:checked~table [value=a7],.b7:checked~table [value=b7],.c7:checked~table [value=c7],.d7:checked~table [value=d7],.e7:checked~table [value=e7],.f7:checked~table [value=f7],.g7:checked~table [value=g7],.h7:checked~table [value=h7],
